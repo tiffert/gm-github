@@ -2,6 +2,7 @@ gdp <- read.csv("data/data-1952.csv")
 new <- read.csv("data/data-1957.csv")
 gdp<-rbind(gdp,new)
 
+# Calculating gdp by jgpetrie
 gdp$gdp<-gdp$gdpPercap*gdp$pop
 
 keep<- c('country','year','lifeExp','gdp')
